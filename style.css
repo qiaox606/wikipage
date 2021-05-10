@@ -1,27 +1,88 @@
-/* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Itim&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-body {
-  font-family: 'Lobster', cursive;
-  margin: 2em;
-  margin: 25px 50px 75px 100px;
+* {
+  box-sizing: border-box;
 }
 
-.header {
-  font-style: italic;
-  color: #373fff;
-  margin: 25px 50px 75px 100px;
-  text-align: center;
+body {
+  margin: 0;
+  background-color:#CD6155;
 }
 
 h1 {
-  font-family:'Lobster', cursive;
+  font-family: 'Ranchers', cursive;
+  text-align: center;
+  font-size: 70px;
+  color: #EC7063;
+  text-shadow: 2px 2px 5px red;
 }
-  aside {
-  width: 20%;
-  padding-right: 15px;
-  margin-right: 15px;
+
+h3{
+  font-family: 'Itim', cursive;
+  color:white;
+}
+
+p,ul,li,ol{
+    font-size: 20px;
+    line-height: 2;
+    font-family: 'Indie Flower', cursive;
+  }
+
+h2{
+  font-family: 'Itim', cursive;
+  text-align: right;
+  margin-right:25px;
+  color: #7B241C;
+  text-decoration: underline;
+}
+
+.header {
+  background-color:#7B241C;
+  border-style: dotted;
+  border-width:35px;
+  border-color:white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.column {
   float: left;
-  background-color: lightgray;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 60%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
+
+a:hover{
+  background-color:#641E16;
+  text-decoration:none;
+  color:#D98880;
 }

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Itim&family=Playfair+Display+SC&display=swap');
+
+h2 {
+  font-family: 'Lobster', cursive;
+}
+
+h1{
+  font-size:60px;
+  font-family:'Playfair Display SC', serif;
+}
+
+p,ol,ul,li,h3{
+  font-family: 'Poiret One', cursive;
+  font-size: 90%;
+  line-height: 2;
+}
+
+h3{
+  font-size:20px;
+}
+
+.header{
+  margin-left:10%;
+  margin-top:70px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.column-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: left;
+  min-height: 300px;
+  box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+  margin-right:10%;
+  margin-left:10%;
+}
+
+.column-side {
+  text-align:center;
+}
+
+a{
+  color:black;
+  text-decoration:none;
+  font-family: 'Poiret One', cursive;
+}
+
+a:hover{
+  background-color:black;
+  text-decoration:none;
+  color:white;
+}
